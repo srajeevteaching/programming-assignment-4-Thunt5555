@@ -1,0 +1,126 @@
+import random
+# Press Shift+F10 to execute it or replace it with your code.
+# Press Double Shift to search everywhere for classes, files, tool windows, actions, and
+#Creating the list
+List = []
+Slist = []
+
+#Picking a suit
+def PickSuit():
+    Suit = random.randint(1, 4)
+
+    if Suit == 1:
+        Suit = print("Hearts")
+        Slist.append(1)
+    if Suit == 2:
+        Suit = print("Clubs")
+    if Suit == 3:
+        Suit = print("Spades")
+    if Suit == 4:
+        Suit = print("Diamonds")
+        return Suit
+
+
+
+#Picking a card
+def deal_card():
+    dealCard = random.randint(1, 13)
+    if dealCard == 1:
+        dealCard = print("Ace")
+        List.append(1)
+    elif dealCard == 2:
+        dealCard = print("Two")
+        List.append(2)
+    elif dealCard == 3:
+        dealCard = print("Three")
+        List.append(3)
+    elif dealCard == 4:
+        dealCard = print("Four")
+        List.append(4)
+    elif dealCard == 5:
+        dealCard = print("Five")
+        List.append(5)
+    elif dealCard == 6:
+        dealCard = print("Six")
+        List.append(6)
+    elif dealCard == 7:
+        dealCard = print("Seven")
+        List.append(7)
+    elif dealCard == 8:
+        dealCard = print("Eight")
+        List.append(8)
+    elif dealCard == 9:
+        dealCard = print("Nine")
+        List.append(9)
+    elif dealCard == 10:
+        dealCard = print("Ten")
+        List.append(10)
+    elif dealCard == 11:
+        dealCard = print("Jack")
+        List.append(11)
+    elif dealCard == 12:
+        dealCard = print("Queen")
+        List.append(12)
+    elif dealCard == 13:
+        dealCard = print("King")
+        List.append(13)
+    else:
+        print("Not a Card")
+    return dealCard
+
+
+def deal_cardD():
+    dealCardD = random.randint(1, 13)
+    if dealCardD == 1:
+        dealCardD = print("Ace")
+        Slist.append(1)
+    elif dealCardD == 2:
+        dealCardD = print("Two")
+        Slist.append(2)
+    elif dealCardD == 3:
+        dealCardD = print("Three")
+        Slist.append(3)
+    elif dealCardD == 4:
+        dealCardD = print("Four")
+        Slist.append(4)
+    elif dealCardD == 5:
+        dealCardD = print("Five")
+        Slist.append(5)
+    elif dealCardD == 6:
+        dealCardD = print("Six")
+        Slist.append(6)
+    elif dealCardD == 7:
+        dealCardD = print("Seven")
+        Slist.append(7)
+    elif dealCard == 8:
+        dealCardD = print("Eight")
+        Slist.append(8)
+    elif dealCardD == 9:
+        dealCardD = print("Nine")
+        Slist.append(9)
+    elif dealCardD == 10:
+        dealCardD = print("Ten")
+        Slist.append(10)
+    elif dealCardD == 11:
+        dealCardD = print("Jack")
+        Slist.append(11)
+    elif dealCardD == 12:
+        dealCardD = print("Queen")
+        Slist.append(12)
+    elif dealCardD == 13:
+        dealCardD = print("King")
+        Slist.append(13)
+    else:
+        print("Not a Card")
+    return dealCardD
+
+
+
+def main():
+    print("Your Hand")
+    print(PickSuit(),"of",deal_card())
+    print(PickSuit(), "of", deal_card())
+    print("Dealer's Hand")
+    print(PickSuit(),"of",deal_card())
+    print(PickSuit(),"of",deal_card())
+main()
